@@ -1,0 +1,326 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap");
+* {
+  --primary-color: hsl(356, 100%, 66%);
+  --bg-cta-color: hsl(355, 100%, 74%);
+  --head-color: hsl(208, 49%, 24%);
+  margin: 0;
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 16px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  margin-right: 2rem;
+}
+
+.main {
+  height: 100%;
+  width: 100%;
+  border-bottom-left-radius: 25%;
+  position: relative;
+  overflow: hidden;
+  background-image: -webkit-gradient(linear, left top, right top, from(#ff8f70), to(#ff3d54));
+  background-image: linear-gradient(to right, #ff8f70, #ff3d54);
+}
+
+.main .container {
+  position: relative;
+}
+
+.main .intro-img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url("/images/bg-pattern-intro.svg") center;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
+  max-width: 1000px;
+  padding-top: 3rem;
+}
+
+.header .logo {
+  color: white;
+  font-size: 3rem;
+}
+
+.header .main-nav {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem;
+  max-width: 1000px;
+}
+
+.header .nav-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 3rem;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.header .nav-items li {
+  margin-right: 1.5rem;
+}
+
+.header .secundary-options {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.signup_btn {
+  color: var(--primary-color);
+  background-color: white;
+  font-weight: bold;
+  padding: 0.5rem 1.5rem;
+  border-radius: 1rem;
+}
+
+.signup_btn:hover {
+  color: white;
+  background-color: var(--bg-cta-color);
+}
+
+.item div {
+  display: none;
+}
+
+.item:hover div {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: white;
+  border-radius: 5px;
+  padding: 1.5rem 2.5rem 1.5rem 1rem;
+}
+
+.item:hover div a {
+  color: black;
+  margin: 5px 0;
+}
+
+.item:hover div a:hover {
+  font-weight: 700;
+}
+
+.hero {
+  padding: 5%;
+}
+
+.hero .cta {
+  text-align: center;
+  color: white;
+}
+
+.hero .cta h1 {
+  font-size: 3.5rem;
+}
+
+.hero .cta h2 {
+  font-weight: 500;
+  color: #cfcccc;
+  margin-top: 1rem;
+}
+
+.hero div {
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+}
+
+.hero div .free {
+  color: var(--primary-color);
+  background-color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 1rem;
+  font-weight: bold;
+  margin-right: 1rem;
+  cursor: pointer;
+}
+
+.hero div .free:hover {
+  color: white;
+  background-color: var(--bg-cta-color);
+}
+
+.hero div .learn {
+  color: white;
+  background-color: var(--primary-color);
+  padding: 0.75rem 1.5rem;
+  border: 1px solid white;
+  border-radius: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.hero div .learn:hover {
+  background-color: white;
+  color: var(--primary-color);
+}
+
+.info-section {
+  color: var(--head-color);
+  text-align: center;
+  overflow: hidden;
+  padding-bottom: 4.5rem;
+}
+
+.info-section .container {
+  padding: 8rem;
+  position: relative;
+}
+
+.info-section .container .desktop {
+  position: absolute;
+  top: 2rem;
+  height: 770px;
+  right: -220px;
+}
+
+.info-section .container .desktop img {
+  height: inherit;
+}
+
+.info-section .container h1 {
+  font-size: 2.75rem;
+}
+
+.first-section,
+.second-section {
+  text-align: left;
+  max-width: 500px;
+  margin-top: 5rem;
+}
+
+.first-section h2,
+.second-section h2 {
+  margin-bottom: 1rem;
+}
+
+.first-section p,
+.second-section p {
+  word-spacing: 4px;
+}
+
+.mobile {
+  position: relative;
+}
+
+.mobile .container {
+  padding: 8rem 0;
+  margin-top: 7rem;
+  background-image: -webkit-gradient(linear, left top, right top, from(#2c2d3f), to(#3f4164));
+  background-image: linear-gradient(to right, #2c2d3f, #3f4164);
+  border-top-right-radius: 10%;
+  border-bottom-left-radius: 10%;
+  font-family: "Overpass";
+  padding-left: 50%;
+  padding-right: 10%;
+  word-spacing: 4px;
+  color: white;
+  overflow: hidden;
+  position: relative;
+}
+
+.mobile .container h1 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+.mobile .container .circle {
+  position: absolute;
+  left: -150px;
+  height: 700px;
+  z-index: 6;
+  top: -320px;
+  width: 800px;
+}
+
+.mobile .phone {
+  position: absolute;
+  left: 50px;
+  top: -110px;
+  z-index: 10;
+  height: 580px;
+}
+
+.laptop-section {
+  position: relative;
+  color: var(--head-color);
+  word-spacing: 5px;
+}
+
+.laptop-section .container {
+  padding-left: 50%;
+  padding-top: 10%;
+  padding-right: 10%;
+}
+
+.laptop-section img {
+  position: absolute;
+  height: 600px;
+  left: -210px;
+  top: 70px;
+}
+
+.footer {
+  color: #c9c9c9;
+  background-color: #25252d;
+  border-top-right-radius: 27%;
+}
+
+.footer .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-top: 18%;
+  padding: 4rem 0;
+}
+
+.footer .container h1 {
+  font-size: 2.5rem;
+}
+
+.footer .container .list h3 {
+  margin-bottom: 1.5rem;
+  font-size: 0.75rem;
+}
+
+.footer .container .list li {
+  margin-bottom: 0.5rem;
+}
+/*# sourceMappingURL=main.css.map */
